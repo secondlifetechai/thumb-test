@@ -8,9 +8,9 @@ import SectionBadge from '../ui/section-badge';
 const Perks = () => {
     return (
         <Wrapper className="py-20 lg:py-32 relative">
-            <div className="flex flex-col items-center text-center gap-4">
+            <div className="flex flex-col items-center text-center gap-4" id='features'>
                 <AnimationContainer animation="fadeUp" delay={0.2}>
-                    <SectionBadge title="Perks" />
+                    <SectionBadge title="Features" />
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
@@ -23,7 +23,7 @@ const Perks = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Seamlessly integrated tools for effortless property management.
+                        Seamlessly integrated tools for effortless interview management.
                     </p>
                 </AnimationContainer>
             </div>

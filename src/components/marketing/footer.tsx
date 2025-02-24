@@ -5,24 +5,20 @@ import AnimationContainer from './global/animation-container';
 import Wrapper from "./global/wrapper";
 
 const PRODUCT_LINKS = [
-    { label: "Property Search", href: "#" },
-    { label: "Management Tools", href: "#" },
-    { label: "Virtual Tours", href: "#" },
-    { label: "Market Analytics", href: "#" },
+    { label: "Home", href: "/#hero" },
+    { label: "Features", href: "/#features" },
+    { label: "How It Works?", href: "/#how" },
+    { label: "Who Can Use It?", href: "/#who" },
 ];
 
 const RESOURCES_LINKS = [
-    { label: "Knowledge Base", href: "#" },
-    { label: "Market Reports", href: "#" },
-    { label: "Property Guides", href: "#" },
-    { label: "Success Stories", href: "#" },
+    { label: "Start Interviewing", href: "/home" },
+    { label: "Interview Reports", href: "/home" },
 ];
 
 const COMPANY_LINKS = [
-    { label: "About Us", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+    { label: "Sign Up", href: "/home" },
+    { label: "Sign In", href: "/home" },
 ];
 
 const SOCIAL_LINKS = [
@@ -50,23 +46,14 @@ const Footer = () => {
                         <div className="flex flex-col items-start justify-start md:max-w-[300px]">
                             <div className="flex items-center gap-2">
                                 <Image
-                                    src="/icons/icon.svg"
+                                    src="/images/marketing/logo.png"
                                     alt="PropEase"
                                     width={32}
                                     height={32}
                                 />
-                                <span className="text-lg lg:text-xl font-medium">
-                                    PropEase
-                                </span>
                             </div>
-                            <p className="text-muted-foreground mt-4 text-sm">
-                                123 Pine Avenue, Suite 500
-                                <br />
-                                New York, NY 10001
-                            </p>
                             <div className="mt-4 text-sm text-muted-foreground">
-                                <p>support@propease.com</p>
-                                <p>+1 (123) 456-7890</p>
+                                <p>support@thumbtest.pro</p>
                             </div>
                             <div className="flex items-center gap-4 mt-6">
                                 {SOCIAL_LINKS.map((social, index) => (
@@ -140,7 +127,7 @@ const Footer = () => {
 
                         <AnimationContainer animation="fadeUp" delay={0.5}>
                             <div>
-                                <h3 className="text-base font-medium">Company</h3>
+                                <h3 className="text-base font-medium">Account</h3>
                                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                     {COMPANY_LINKS.map((link, index) => (
                                         <AnimationContainer
@@ -167,7 +154,7 @@ const Footer = () => {
                 <AnimationContainer animation="fadeUp" delay={1}>
                     <div className="mt-16 border-t border-border/40 py-8 flex flex-col md:flex-row items-center justify-center">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} PropEase. All rights reserved.
+                            © {new Date().getFullYear()} ThumbTest. All rights reserved.
                         </p>
                     </div>
                 </AnimationContainer>

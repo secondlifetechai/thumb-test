@@ -6,7 +6,7 @@ import Wrapper from "./global/wrapper";
 import { Button } from "../ui/button";
 import Marquee from "../ui/marquee";
 import SectionBadge from "../ui/section-badge";
-import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import DasboardBtn from "../DasboardBtn";
 
 const Hero = () => {
@@ -22,22 +22,22 @@ const Hero = () => {
 
     return (
         <Wrapper className="pt-20 lg:pt-32 relative min-h-screen w-full h-full flex-1">
-            <div className="flex flex-col lg:flex-row w-full h-full lg:gap-16">
+            <div className="flex flex-col lg:flex-row w-full h-full lg:gap-16" id="hero">
                 <div className="flex flex-col items-start gap-10 py-8 w-full">
                     <div className="flex flex-col items-start gap-4">
                         <AnimationContainer animation="fadeUp" delay={0.2}>
-                            <SectionBadge title="Trusted by 10,000+ Users" />
+                            <SectionBadge title="Fast. Simple. Powerful." />
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeUp" delay={0.4}>
                             <h1 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
-                                Effortless Real Estate Trading
+                                Hire Smarter, Faster & More Effectively
                             </h1>
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeUp" delay={0.6}>
                             <p className="text-sm md:text-base lg:text-lg text-muted-foreground">
-                                Simplify your property journey with our comprehensive platform. Buy, sell, or manage properties with ease using our innovative tools and expert guidance.
+                                Say goodbye to long, complicated interview processes! Thumb Test is your all-in-one video calling interview platform designed to help interviewers manage and conduct interviews effortlessly.
                             </p>
                         </AnimationContainer>
                     </div>
@@ -53,7 +53,7 @@ const Hero = () => {
                             <SignedOut>
                                 <Link href="/home">
                                     <Button size="lg" className="w-full md:w-auto">
-                                        Start free trial
+                                        Start for free
                                     </Button>
                                 </Link>
                             </SignedOut>
@@ -69,7 +69,7 @@ const Hero = () => {
                                 <Marquee className="[--duration:40s] select-none [--gap:2rem]">
                                     {[...Array(10)].map((_, index) => (
                                         <div key={index} className="flex items-center justify-center text-muted-foreground h-16">
-                                            {companies[index % companies.length]({ className: "w-auto h-5" })}
+                                            {/* {companies[index % companies.length]({ className: "w-auto h-5" })} */}
                                         </div>
                                     ))}
                                 </Marquee>
@@ -86,7 +86,7 @@ const Hero = () => {
                             <div className="pointer-events-none hidden lg:block absolute inset-y-0 right-1/4 w-1/3 h-full bg-gradient-to-l from-background z-50"></div>
                             <div className="lg:absolute lg:inset-0">
                                 <Image
-                                    src="/images/dashboard.png"
+                                    src="/images/hero.png"
                                     alt="hero"
                                     sizes="1000px"
                                     width={1024}

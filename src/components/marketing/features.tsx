@@ -7,20 +7,20 @@ import SectionBadge from '../ui/section-badge';
 const Features = () => {
     return (
         <Wrapper className="py-20 lg:py-32">
-            <div className="flex flex-col items-center text-center gap-4 mb-16">
+            <div className="flex flex-col items-center text-center gap-4 mb-16" id='who'>
                 <AnimationContainer animation="fadeUp" delay={0.2}>
-                    <SectionBadge title="Platform Features" />
+                    <SectionBadge title="Who Is It For?" />
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
-                        Manage properties smarter
+                        Manage intervies smarter
                     </h2>
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Experience the future of real estate with our all-in-one platform for seamless property management.
+                        Experience the future of recruitment process with our all-in-one platform for seamless interview management.
                     </p>
                 </AnimationContainer>
             </div>

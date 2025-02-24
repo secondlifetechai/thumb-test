@@ -20,7 +20,7 @@ const FAQ = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Find answers to common questions about our PropEase
+                        Find answers to common questions about our platform
                     </p>
                 </AnimationContainer>
             </div>

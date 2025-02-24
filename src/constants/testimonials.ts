@@ -1,43 +1,43 @@
 export const TESTIMONIALS = [
     {
-        content: "The AI-powered valuation tool helped me price my properties accurately. Closed deals 30% faster than traditional methods.",
-        author: "Emma",
-        role: "Real Estate Agent",
+        content: "Thumb Test has completely transformed the way we hire. The screen sharing and recording features have been game-changers for us!",
+        author: "Sarah Thompson",
+        role: "HR Manager",
         image: "/images/person-one.jpg",
         rating: 5
     },
     {
-        content: "Virtual tours and 3D viewing features saved me countless hours. Made property hunting efficient and enjoyable from anywhere.",
-        author: "James",
-        role: "Property Buyer",
+        content: "I love how easy it is to set up and schedule interviews. The ability to review recordings has made hiring decisions much more precise.",
+        author: "John Davis",
+        role: "Business Owner",
         image: "/images/person-two.jpg",
         rating: 5
     },
     {
-        content: "Managing multiple properties is now seamless. The automated maintenance tracking and tenant portal are game-changers.",
-        author: "Sofia",
-        role: "Property Manager",
+        content: "Best interview platform out there! Smooth video calls, no technical hiccups, and great security measures. Highly recommended!",
+        author: "Lisa Morgan",
+        role: "Recruiter",
         image: "/images/person-three.jpg",
         rating: 5
     },
     {
-        content: "The document handling system is brilliant. Digital contracts and secure payments have simplified my rental processes.",
-        author: "Lucas",
-        role: "Property Owner",
+        content: "Thumb Test is a must-have for every recruiter. The ability to collaborate with my team and rewatch interviews has improved our hiring quality tremendously.",
+        author: "Emily Richards",
+        role: "Talent Acquisition Specialist",
         image: "/images/person-four.jpeg",
         rating: 5
     },
     {
-        content: "Market analytics and trend reports help me make data-driven decisions. Perfect tool for investment planning.",
-        author: "Isabella",
-        role: "Property Investor",
+        content: "Hiring the right people is crucial for any business, and Thumb Test makes it effortless. The scheduling and dashboard features save me so much time!",
+        author: "Mark Johnson",
+        role: "CEO",
         image: "/images/person-five.jpeg",
         rating: 5
     },
     {
-        content: "Tenant screening and rental management features are exceptional. Reduced my vacancy rates significantly.",
-        author: "Oliver",
-        role: "Landlord",
+        content: "Finally, an interview platform that meets all our needs. Screen sharing is perfect for coding assessments, and recording interviews helps with technical evaluations.",
+        author: "David Lee",
+        role: "Technical Lead",
         image: "/images/person-six.jpg",
         rating: 5
     }

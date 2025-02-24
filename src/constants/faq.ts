@@ -5,27 +5,27 @@ export type FAQItem = {
 
 export const FAQS: FAQItem[] = [
     {
-        question: "How does the property listing process work?",
-        answer: "Our platform makes listing properties simple. Upload property details, photos, and documents through our intuitive interface. Your listings are instantly visible to potential buyers or renters, with AI-powered optimization for maximum visibility."
+        question: "What is Thumb Test, and how does it work?",
+        answer: "Thumb Test is an all-in-one video calling interview platform that allows recruiters, HR teams, and businesses to conduct and manage interviews efficiently. With features like video calls, screen sharing, and recording, it simplifies the hiring process by enabling structured assessments, easy scheduling, and collaborative decision-making."
     },
     {
-        question: "What tools are available for property management?",
-        answer: "We offer a comprehensive suite of tools including automated rent collection, maintenance request tracking, tenant screening, financial reporting, and document management. All these features are integrated seamlessly into one dashboard."
+        question: "Do candidates need to download any software to join an interview?",
+        answer: "No! Candidates can join the interview directly from their web browser with just one click. There’s no need for downloads, installations, or sign-ups, making the process fast and seamless."
     },
     {
-        question: "How secure are the transactions on your platform?",
-        answer: "We implement bank-level security measures for all transactions. Our platform uses advanced encryption, secure payment gateways, and multi-factor authentication to ensure your financial transactions are completely safe."
+        question: "Can I record and save interviews for later review?",
+        answer: "Yes! Thumb Test allows you to record entire interview sessions so you can review, share, and analyze them later. This helps in making data-driven hiring decisions while ensuring transparency in the process."
     },
     {
-        question: "Can I manage multiple properties efficiently?",
-        answer: "Absolutely! Our platform is designed to handle multiple properties with ease. You can organize properties by portfolios, track performance metrics across all properties, and manage multiple tenant relationships from a single dashboard."
+        question: "Is my data and interview information secure?",
+        answer: "Absolutely. Thumb Test uses end-to-end encryption and follows strict data protection protocols to ensure your interviews, recordings, and personal information remain private and secure."
     },
     {
-        question: "What kind of support do you provide?",
-        answer: "We offer 24/7 customer support through multiple channels including live chat, email, and phone. Our dedicated support team is trained to help with technical issues, platform navigation, and best practices for property management."
+        question: "Can I integrate Thumb Test with my existing HR tools?",
+        answer: "Yes! Thumb Test is designed to seamlessly integrate with popular HR management systems, applicant tracking systems (ATS), and scheduling tools, making it easy to fit into your existing hiring workflow."
     },
     {
-        question: "Is there a mobile app available?",
-        answer: "Yes, we have both iOS and Android apps available. The mobile apps offer all core functionalities of the web platform, allowing you to manage your properties on the go with real-time notifications and updates."
+        question: "Is there a free trial available?",
+        answer: "Yes! We offer a free trial so you can experience the full power of Thumb Test before committing to a plan. Sign up today and start conducting interviews effortlessly!"
     }
 ];

@@ -3,17 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "@/constants";
 import { useClickOutside } from "@/hooks";
-import { SignedIn, SignedOut, SignInButton, useClerk, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, useClerk, UserButton } from "@clerk/nextjs";
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { RefObject, useRef, useState } from "react";
 import AnimationContainer from "./global/animation-container";
-import Icons from "./global/icons";
 import Wrapper from "./global/wrapper";
 import { cn } from "@/lib/utils";
 import DasboardBtn from "../DasboardBtn";
-import { ModeToggle } from "../ModeToggle";
 
 const Navbar = () => {
 
@@ -68,7 +66,7 @@ const Navbar = () => {
                         transition={{ duration: 0.2 }}
                     >
                         <Link href="/" className="flex items-center gap-2">
-                            <Icons.logo className="w-max h-6 -mt-1" />
+                            <img src="/images/marketing/logo.png" className="w-max h-12 -mt-1" />
                         </Link>
                     </motion.div>
 
@@ -93,6 +91,11 @@ const Navbar = () => {
                     <AnimationContainer animation="fadeLeft" delay={0.1}>
                         <div className="flex items-center gap-x-4">
                             <SignedIn>
+                                <Link href="/home">
+                                    <Button size="sm">
+                                        Lunch Interview
+                                    </Button>
+                                </Link>
                                 <DasboardBtn />
                                 <UserButton />
                             </SignedIn>
@@ -133,13 +136,21 @@ const Navbar = () => {
                     <div className="flex items-center justify-between gap-x-4 w-full">
                         <AnimationContainer animation="fadeRight" delay={0.1}>
                             <Link href="/">
-                                <Icons.icon className="w-max h-6" />
+                                <img src="/images/marketing/logo.png" className="w-max h-8 -mt-1" />
                             </Link>
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeLeft" delay={0.1}>
                             <div className="flex items-center justify-center gap-x-4">
                                 <SignedIn>
+                                    <Link href="/home" className="w-full">
+                                        <Button
+                                            variant="default"
+                                            className="block md:hidden w-full"
+                                        >
+                                            Lunch Interview
+                                        </Button>
+                                    </Link>
                                     <DasboardBtn />
                                     <UserButton />
                                 </SignedIn>
@@ -198,6 +209,14 @@ const Navbar = () => {
                             ))}
                             <AnimationContainer animation="fadeUp" delay={0.5} className="w-full">
                                 <SignedIn>
+                                    <Link href="/home" className="w-full">
+                                        <Button
+                                            variant="default"
+                                            className="block md:hidden w-full"
+                                        >
+                                            Lunch Interview
+                                        </Button>
+                                    </Link>
                                     <DasboardBtn />
                                     <UserButton />
                                 </SignedIn>
@@ -205,7 +224,6 @@ const Navbar = () => {
                                 <SignedOut>
                                     <Link href="/home" className="w-full">
                                         <Button
-                                            onClick={() => setOpen(false)}
                                             variant="default"
                                             className="block md:hidden w-full"
                                         >

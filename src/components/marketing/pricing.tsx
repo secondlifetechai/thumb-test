@@ -9,6 +9,7 @@ import AnimationContainer from './global/animation-container';
 import Wrapper from "./global/wrapper";
 import SectionBadge from '../ui/section-badge';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const Pricing = () => {
 
@@ -29,7 +30,7 @@ const Pricing = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Select a plan that best suits your real estate business needs
+                        Select a plan that best suits your hiring needs
                     </p>
                 </AnimationContainer>
             </div>
@@ -131,12 +132,14 @@ const Pricing = () => {
                             </div>
 
                             <AnimationContainer animation="fadeUp" delay={1 + (index * 0.2)}>
-                                <Button
-                                    variant={plan.popular ? "default" : "secondary"}
-                                    className="w-full"
-                                >
-                                    Get Started
-                                </Button>
+                                <Link href={'/home'}>
+                                    <Button
+                                        variant={plan.popular ? "default" : "secondary"}
+                                        className="w-full"
+                                    >
+                                        Get Started
+                                    </Button>
+                                </Link>
                             </AnimationContainer>
                         </div>
                     </AnimationContainer>

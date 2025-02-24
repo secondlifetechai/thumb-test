@@ -1,14 +1,10 @@
 export const NAV_LINKS = [
     {
         name: "Features",
-        link: "#",
+        link: "/#features",
     },
     {
-        name: "Pricing",
-        link: "#",
-    },
-    {
-        name: "Contact",
-        link: "#",
+        name: "For Who?",
+        link: "/#who",
     },
 ];

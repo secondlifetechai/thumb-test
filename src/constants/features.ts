@@ -1,25 +1,25 @@
 export const FEATURES = [
     {
-        title: "Smart property management",
-        description: "Manage multiple properties effortlessly with our AI-powered dashboard. Track rent payments and maintenance schedules.",
+        title: "Recruiters & HR Teams",
+        description: "Save time, reduce hiring costs, and streamline candidate assessments.",
         image: "/images/f1.svg",
         size: "large"
     },
     {
-        title: "Real-time analytics",
-        description: "Track property views, leads, and revenue through real-time analytics.",
+        title: "Business Owners",
+        description: "Find top talent effortlessly and make data-driven hiring decisions.",
         image: "/images/f2.svg",
         size: "small"
     },
     {
-        title: "Smart transaction hub",
-        description: "Handle property transactions securely in one place, from offers to digital contracts and payments.",
+        title: "Hiring Managers",
+        description: "Conduct structured and organized interviews while reducing biases.",
         image: "/images/f3.svg",
         size: "large"
     },
     {
-        title: "Instant property valuation",
-        description: "Get real-time market valuations powered by AI and big data for informed pricing decisions.",
+        title: "Freelance Interviewers",
+        description: "Manage multiple clients, conduct professional interviews, and maintain an efficient workflow.",
         image: "/images/f4.svg",
         size: "small"
     },
